@@ -1,0 +1,116 @@
+body{
+    
+    margin: 0;
+    padding: 0;
+
+}
+
+.menu-container{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    height: 78px;
+    
+}
+.menu-container_icon{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+}
+
+.menu-container_logo{
+    display: flex;
+    margin-left: 22%;
+    width: 100%;
+    
+}
+
+.menu-container_logo img{
+   width: 112px;
+   height: 40px;
+}
+
+.sinopsis-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sinopisis-container_image{
+    position: relative;
+    background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #FFFFFF 91.54%);
+    background-size: cover;
+    width: 100%;
+}
+
+.sinopisis-container_image img {
+    position: relative;
+    z-index: -1;
+    display: block;
+    max-width: 100%;
+  }
+  
+  .sinopisis-container_content{
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    gap: 16px;
+
+    width: 90%;
+    height: 256px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px #B8E1FF;
+    border-radius: 6px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+  }
+
+  .sinopisis-container_content_title{
+    align-self: flex-start;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+
+  .sinopisis-container_content_text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+    letter-spacing: 0.25px;
+    color: #000000;
+
+
+  }
+
+  .sinopisis-container_content_readAll{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+    letter-spacing: 0.15px;
+
+    /* Primary/Dark_1 */
+    color: #0C75AF;
+
+  }
+
+  hr{
+    background-color: #0C75AF;
+  }
+
+  
