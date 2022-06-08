@@ -1,5 +1,5 @@
 body {
-  margin-left: 23%;
+  margin-left: 20%;
   margin-right: 23%;
 }
 
@@ -41,4 +41,15 @@ body {
   height: 279px;
   width: 220px;
   border-radius: 10%;
+}
+
+.container__characterCard_margin {
+  margin-right: 14px;
+}
+
+.container-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
 }

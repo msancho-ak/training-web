@@ -1,13 +1,14 @@
+@import 'settings';
 @import 'generic';
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: $margin-images;
     &__characterCard {
         position: relative;
         height: 279px;
         width: 220px;
-        border-radius: 10%;
+        border-radius: $border-radius-images;
         background-repeat: no-repeat;
         background-size: cover;
         background-image: linear-gradient(
@@ -17,7 +18,7 @@
         );
         &__characterName {
             position: absolute;
-            color: #fff;
+            color: $image-font-color;
             text-align: center;
             top: 70%;
             left: 0;
@@ -33,8 +34,17 @@
             display: block;
             height: 279px;
             width: 220px;
-            border-radius: 10%;
+            border-radius: $border-radius-images;
           }
       }
+      &__characterCard_margin{
+        margin-right: $margin-images;
+      } 
       
   }
+
+  .container-flex{
+    display: flex;
+    margin-top: $margin-images;
+  }
+
