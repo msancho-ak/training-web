@@ -13,19 +13,25 @@
   </head>
   <body>
     <div class="menu-container">
-      <div class="menu-container_icon">
-        <img src="images/menu.svg" alt="" />
+      <div class="menu-container_icon" onclick="showOrHideMenu()">
+        <img id="iconMenu" src="images/menu.svg" alt="" />
       </div>
       <div class="menu-container_logo">
         <img src="images/One-Piece-Logo 1.svg" alt="" />
       </div>
     </div>
 
+    <div id="menuOptions" class="menu_items classHide">
+      <div class="menu_item"><a href="#">Home</a></div>
+      <div class="menu_item"><a href="#">Characters</a></div>
+      <div class="menu_item"><a href="#">Islands</a></div>
+      <div class="menu_item"><a href="#">Mist Objects</a></div>
+    </div>
     <div class="sinopsis-container">
       <div class="sinopisis-container_image">
         <img src="images/image 1.svg" alt="" />
       </div>
-      <div id="logoReadMore" class="classReadMore">
+      <div id="logoReadMore" class="classHide">
         <img src="images/One-Piece-Logo 1.svg" alt="" />
       </div>
       <div class="sinopisis-container_content">
@@ -42,8 +48,7 @@
             his journey into piracy, as well as the home island of his father,
             Monkey D. Dragon.
           </p>
-
-          <div class="classReadMore" id="readMoreSipnosis">
+          <div class="classHide" id="readMoreSipnosis">
             <p>
               This is also the adopted home of Portgas D. Ace after the death of
               his mother and the home of Sabo and his family.
@@ -65,6 +70,73 @@
         >
           <img id="readMoreIcon" src="images/readMore.svg" alt="" />
           <span id="readMoreText">Read All</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="characters-container">
+      <div class="characters-container_content">
+        <div class="characters-container_content_title">
+          <div class="characters-container_content_title--character">
+            <span>Characters</span>
+          </div>
+          <div class="characters-container_content_title--see-all">
+            <span>See All</span>
+          </div>
+        </div>
+        <div class="characters-container_grid">
+          <div class="characters-container_grid_item">
+            <img src="images/monkeydluffy.svg" alt="" />
+          </div>
+          <div class="characters-container_grid_item">
+            <img src="images/ace.svg" alt="" />
+          </div>
+          <div class="characters-container_grid_item classHide">
+            <img src="images/zoro.svg" alt="" />
+          </div>
+          <div class="characters-container_grid_item classHide">
+            <img src="images/nico.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="characters-container">
+      <div class="characters-container_content">
+        <div class="characters-container_content_title">
+          <div class="characters-container_content_title--character">
+            <span>Island</span>
+          </div>
+          <div class="characters-container_content_title--see-all">
+            <span>See All</span>
+          </div>
+        </div>
+        <div class="characters-container_grid">
+          <div class="characters-container_grid_item--island">
+            <img src="images/dawnIsland.svg" alt="" />
+            <div class="characters-container_grid_item_descripcion">
+              <spam>Dawn Island</spam>
+
+              <img
+                style="width: 10px; height: 10px"
+                src="images/loc.svg"
+                alt=""
+              />
+              <span>East Blue</span>
+            </div>
+          </div>
+          <div class="characters-container_grid_item--island">
+            <img src="images/reverseIsland.svg" alt="" />
+            <div class="characters-container_grid_item_descripcion">
+              <spam>Reverse Island</spam>
+              <img
+                style="width: 10px; height: 10px"
+                src="images/loc.svg"
+                alt=""
+              />
+              <span>Red Line</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>

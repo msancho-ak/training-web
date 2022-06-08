@@ -16,7 +16,20 @@ function readMoreOrLess(){
         readMoreDiv.style.display = 'none';
         readMoretext.innerText = "Read All"
         readMoreIcon.src ="images/readMore.svg"
-        
     }
     
+}
+
+function showOrHideMenu(){
+
+    let menuOptions = document.getElementById("menuOptions")
+    let iconMenu = document.getElementById("iconMenu")
+    if(window.getComputedStyle(menuOptions).display == 'none'){
+        menuOptions.style.display = 'block';
+        iconMenu.src ="images/close.svg"
+    }
+    else{
+        menuOptions.style.display = 'none';
+        iconMenu.src ="images/menu.svg"
+    }
 }
