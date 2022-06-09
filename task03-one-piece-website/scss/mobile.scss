@@ -28,6 +28,10 @@
     height: 300px;
     width: 100%;
     background-color: $general-background-color;
+    font-size: 18px;
+    line-height: 24px;
+    color: #575757;
+    text-decoration: none;
 }
 
 .menu_item{
@@ -36,6 +40,25 @@
     justify-content: center;
 }
 
+.languages{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 22px;
+        margin-left: 5px;
+    }
+    &_item{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &--selected{
+            background-color: #ECECEC;
+        }
+    }
+}
 
 a{
     font-size: 18px;
@@ -58,7 +81,7 @@ a:active{color: $secondary-color;}
     top:60px;
     &_image{
         position: relative;
-        background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, $general-background-color 91.54%);
+        background: linear-gradient(180deg, rgba(196, 196, 196, 0) 70%, $general-background-color 91.54%);
         background-size: cover;
         width: 100%;
         img {
@@ -110,6 +133,9 @@ a:active{color: $secondary-color;}
             width: 100%;
             display: flex;
             justify-content: center;
+            img{
+                margin-right: 10px;
+            }
         }
     }
 }
@@ -140,7 +166,6 @@ a:active{color: $secondary-color;}
         padding: 8px;
         gap: 16px;
         width: 90%;
-        background: $general-background-color;
         flex: none;
         order: 0;
         flex-grow: 0;
@@ -192,7 +217,7 @@ a:active{color: $secondary-color;}
 
 .characters-container_grid_item{
     width: 140px;
-    height: 200px;
+    height: 190px;
     margin: 10px 0px;
     background-image: linear-gradient(179.8deg, rgba(255, 255, 255, 0) 50.33%, #000000 97.62%);
     border-radius: 10%;
@@ -200,8 +225,24 @@ a:active{color: $secondary-color;}
     img{
         width: 140px;
         height: 200px;
+        position: absolute;
+        z-index: -1;
+    }
+    &_characterName{
+        position: absolute;
+        color: $general-background-color;
+        text-align: center;
+        top: 70%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+        font-family: 'Roboto';
     }
 }
+
+
 
 .island-container_grid_item{
     position: relative;
@@ -213,10 +254,18 @@ a:active{color: $secondary-color;}
         top: 90px;
         background: rgba(0, 96, 150, 0.59);
         backdrop-filter: blur(4px);
-        /* Note: backdrop-filter has minimal browser support */
         border-radius: 6px;
         padding-left: 10%;
         color: $general-background-color;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        letter-spacing: 0.5px;
     }
     img{
         width: 150px;
@@ -276,4 +325,8 @@ a:active{color: $secondary-color;}
     text-align: center;
     letter-spacing: 0.4px;
     color: $general-background-color;
+
+    div{
+        width: 72%;
+    }
 }

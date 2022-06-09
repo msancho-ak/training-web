@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>One Piece - Home</title>
     <link
+      href="http://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto Slab"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       media="screen and (max-width: 480px)"
       href="css/mobile/mobile.css"
@@ -31,6 +40,20 @@
       <div class="menu_item"><a href="#characterSection">Characters</a></div>
       <div class="menu_item"><a href="#islandSection">Islands</a></div>
       <div class="menu_item"><a href="#mistSection">Mist Objects</a></div>
+      <div class="menu_item">
+        <div class="languages">
+          <div class="languages_item languages_item--selected">
+            English
+            <img src="images/usa.svg" alt="" />
+          </div>
+        </div>
+        <div class="languages">
+          <div class="languages_item">
+            Spanish
+            <img src="images/spain.svg" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
     <div class="sinopsis-container">
       <div class="sinopsis-container_image">
@@ -93,15 +116,27 @@
         <div class="common-items-container_grid">
           <div class="characters-container_grid_item">
             <img src="images/monkeydluffy.svg" alt="" />
+            <p class="characters-container_grid_item_characterName">
+              Monkey D. Luffy
+            </p>
           </div>
           <div class="characters-container_grid_item">
             <img src="images/ace.svg" alt="" />
+            <p class="characters-container_grid_item_characterName">
+              Portgas D. Ace
+            </p>
           </div>
           <div class="characters-container_grid_item classHide">
             <img src="images/zoro.svg" alt="" />
+            <p class="characters-container_grid_item_characterName">
+              Roronoa Zoro
+            </p>
           </div>
           <div class="characters-container_grid_item classHide">
             <img src="images/nico.svg" alt="" />
+            <p class="characters-container_grid_item_characterName">
+              Nico Robin
+            </p>
           </div>
         </div>
       </div>
@@ -122,24 +157,29 @@
             <img src="images/dawnIsland.svg" alt="" />
             <div class="island-container_grid_item_descripcion">
               <spam>Dawn Island</spam>
-              <img
-                style="width: 10px; height: 10px"
-                src="images/loc.svg"
-                alt=""
-              />
-              <span>East Blue</span>
+
+              <div class="island-container_grid_item_descripcion_region">
+                <img
+                  style="width: 10px; height: 10px"
+                  src="images/loc.svg"
+                  alt=""
+                />
+                <span>East Blue</span>
+              </div>
             </div>
           </div>
           <div class="island-container_grid_item">
             <img src="images/reverseIsland.svg" alt="" />
             <div class="island-container_grid_item_descripcion">
               <spam>Reverse Island</spam>
-              <img
-                style="width: 10px; height: 10px"
-                src="images/loc.svg"
-                alt=""
-              />
-              <span>Red Line</span>
+              <div class="island-container_grid_item_descripcion_region">
+                <img
+                  style="width: 10px; height: 10px"
+                  src="images/loc.svg"
+                  alt=""
+                />
+                <span>Red Line</span>
+              </div>
             </div>
           </div>
         </div>
@@ -186,13 +226,13 @@
           <div class="mist-objects-container_grid_item">
             <img src="images/gommu.svg" alt="" />
             <div class="mist-container_grid_item_descripcion">
-              <spam>Gomu Gomu No Mi</spam>
-              <spam
-                >Is a Paramecia-type Devil Fruit that gives the user's body the
+              <b><spam>Gomu Gomu No Mi</spam></b>
+              <span>
+                Is a Paramecia-type Devil Fruit that gives the user's body the
                 properties of rubber, making the user a Rubber Human. It was
                 then accidentally eaten by the series protagonist, Monkey D.
-                Luffy.</spam
-              >
+                Luffy.
+              </span>
             </div>
           </div>
         </div>
@@ -200,10 +240,12 @@
     </div>
     <div class="footer">
       <img src="images/pngwing.svg" alt="" />
-      <span
-        >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit at vel
-        congue scelerisque tortor tortor.</span
-      >
+      <div>
+        <span
+          >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit at vel
+          congue scelerisque tortor tortor.</span
+        >
+      </div>
     </div>
   </body>
   <script src="index.js"></script>
