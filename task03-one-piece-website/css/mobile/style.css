@@ -9,7 +9,6 @@ body{
     align-items: center;
     background-color: #fff;
     height: 78px;
-    
 }
 .menu-container_icon{
     display: flex;
@@ -86,8 +85,6 @@ body{
     /* or 125% */
     letter-spacing: 0.25px;
     color: #000000;
-
-
   }
 
   .sinopisis-container_content_readAll{
@@ -101,11 +98,15 @@ body{
 
     /* Primary/Dark_1 */
     color: #0C75AF;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
   }
 
-  hr{
-    background-color: #0C75AF;
+  .division{
+    width: 100%;
+    border-bottom:0.5px solid #0C75AF;
   }
 
   .classHide{
@@ -181,8 +182,6 @@ a:active{color: #0C75AF;}
   /* or 125% */
   letter-spacing: 0.25px;
   color: #000000;
-
-
 }
 
 .common-items-container_title--main{
@@ -215,6 +214,8 @@ a:active{color: #0C75AF;}
   /* Primary/Dark_1 */
   color: #0C75AF;
 
+  
+
 }
 
 .common-items-container_grid{
@@ -237,9 +238,6 @@ a:active{color: #0C75AF;}
   margin: 10px 0px;
   background-image: linear-gradient(179.8deg, rgba(255, 255, 255, 0) 50.33%, #000000 97.62%);
   border-radius: 10%;
-  position: relative;
-}
-.characters-container_grid_item{
   position: relative;
 }
 .characters-container_grid_item img{

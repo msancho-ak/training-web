@@ -8,7 +8,12 @@
     <link
       rel="stylesheet"
       media="screen and (max-width: 480px)"
-      href="css/mobile/style.css"
+      href="css/mobile/mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 720px) and (min-width: 481px) "
+      href="css/tablet/style.css"
     />
   </head>
   <body>
@@ -23,22 +28,22 @@
 
     <div id="menuOptions" class="menu_items classHide">
       <div class="menu_item"><a href="#">Home</a></div>
-      <div class="menu_item"><a href="#">Characters</a></div>
-      <div class="menu_item"><a href="#">Islands</a></div>
-      <div class="menu_item"><a href="#">Mist Objects</a></div>
+      <div class="menu_item"><a href="#characterSection">Characters</a></div>
+      <div class="menu_item"><a href="#islandSection">Islands</a></div>
+      <div class="menu_item"><a href="#mistSection">Mist Objects</a></div>
     </div>
     <div class="sinopsis-container">
-      <div class="sinopisis-container_image">
-        <img src="images/image 1.svg" alt="" />
+      <div class="sinopsis-container_image">
+        <img src="images/mainImage.svg" alt="" />
       </div>
       <div id="logoReadMore" class="classHide">
         <img src="images/One-Piece-Logo 1.svg" alt="" />
       </div>
-      <div class="sinopisis-container_content">
-        <div class="sinopisis-container_content_title">
+      <div class="sinopsis-container_content">
+        <div class="sinopsis-container_content_title">
           <span>Sipnosis</span>
         </div>
-        <div class="sinopisis-container_content_text">
+        <div class="sinopsis-container_content_text">
           <p>
             Dawn Island is an island located in the East Blue and where the Goa
             Kingdom is situated.
@@ -64,8 +69,9 @@
             </p>
           </div>
         </div>
+        <div class="division"></div>
         <div
-          class="sinopisis-container_content_readAll"
+          class="sinopsis-container_content_readAll"
           onclick="readMoreOrLess()"
         >
           <img id="readMoreIcon" src="images/readMore.svg" alt="" />
@@ -74,14 +80,14 @@
       </div>
     </div>
 
-    <div class="common-items-container">
+    <div id="characterSection" class="common-items-container">
       <div class="common-items-container_content">
         <div class="common-items-container_title">
           <div class="common-items-container_title--main">
             <span>Characters</span>
           </div>
           <div class="common-items-container_title-see-all">
-            <span>See All</span>
+            <span>See all</span>
           </div>
         </div>
         <div class="common-items-container_grid">
@@ -101,14 +107,14 @@
       </div>
     </div>
 
-    <div class="common-items-container">
+    <div id="islandSection" class="common-items-container">
       <div class="common-items-container_content">
         <div class="common-items-container_title">
           <div class="common-items-container_title--main">
             <span>Island</span>
           </div>
           <div class="common-items-container_title-see-all">
-            <span>See All</span>
+            <span>See all</span>
           </div>
         </div>
         <div class="common-items-container_grid">
@@ -140,14 +146,14 @@
       </div>
     </div>
 
-    <div class="common-items-container">
+    <div id="mistSection" class="common-items-container">
       <div class="common-items-container_content">
         <div class="common-items-container_title">
           <div class="common-items-container_title--main">
             <span>Mist Objects</span>
           </div>
           <div class="common-items-container_title-see-all">
-            <span>See All</span>
+            <span>See all</span>
           </div>
         </div>
         <div
