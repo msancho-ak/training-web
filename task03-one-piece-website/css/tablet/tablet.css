@@ -12,10 +12,6 @@ body {
   display: none;
 }
 
-.hideMore {
-  display: none;
-}
-
 .menu-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,7 +37,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 22%;
+  margin-left: 14em;
   width: 100%;
 }
 
@@ -60,8 +56,6 @@ body {
   line-height: 24px;
   color: #575757;
   text-decoration: none;
-  -webkit-box-shadow: 0px 4px 3px #F3F3F3;
-          box-shadow: 0px 4px 3px #F3F3F3;
 }
 
 .menu_item {
@@ -144,8 +138,6 @@ a:active {
 
 .sinopsis-container_image {
   position: relative;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, rgba(196, 196, 196, 0)), color-stop(91.54%, #fff));
-  background: linear-gradient(180deg, rgba(196, 196, 196, 0) 70%, #fff 91.54%);
   background-size: cover;
   width: 100%;
 }
@@ -184,6 +176,10 @@ a:active {
   -ms-flex-positive: 0;
       flex-grow: 0;
   margin-top: 10px;
+  position: absolute;
+  top: 0;
+  margin-top: 62%;
+  z-index: 1;
 }
 
 .sinopsis-container_content_title {
@@ -242,6 +238,12 @@ a:active {
       -ms-flex-direction: column;
           flex-direction: column;
   top: 60px;
+  position: relative;
+  top: 0;
+}
+
+.common-items-container--margin {
+  margin-top: 15em;
 }
 
 .common-items-container_grid {
@@ -347,8 +349,8 @@ a:active {
 }
 
 .characters-container_grid_item {
-  width: 140px;
-  height: 190px;
+  width: 22%;
+  height: 192px;
   margin: 10px 0px;
   background-image: linear-gradient(179.8deg, rgba(255, 255, 255, 0) 50.33%, #000000 97.62%);
   border-radius: 10%;
@@ -356,8 +358,8 @@ a:active {
 }
 
 .characters-container_grid_item img {
-  width: 140px;
-  height: 200px;
+  width: 100%;
+  height: 190px;
   position: absolute;
   z-index: -1;
 }
@@ -370,21 +372,24 @@ a:active {
   left: 0;
   right: 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   font-family: 'Roboto';
 }
 
 .island-container_grid_item {
   position: relative;
+  width: 32%;
 }
 
 .island-container_grid_item_descripcion {
   position: absolute;
   width: 108px;
   height: 45px;
-  left: 15px;
-  top: 90px;
+  left: 0;
+  top: 0;
+  margin-top: 80%;
+  margin-left: 23%;
   background: rgba(0, 96, 150, 0.59);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
@@ -410,14 +415,18 @@ a:active {
 }
 
 .island-container_grid_item img {
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  border-radius: 10%;
 }
 
 .mist-objects-container_grid_item {
   margin: 5px 0px;
   position: relative;
-  width: 100%;
+  width: 50%;
+}
+
+.mist-objects-container_grid_item img {
+  width: 50%;
 }
 
 .mist-container_grid_item_descripcion {
@@ -432,10 +441,10 @@ a:active {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  height: 112px;
-  width: 225px;
+  height: 110px;
+  width: 242px;
   position: absolute;
-  left: 90px;
+  left: 73px;
   top: 0px;
   background: rgba(0, 96, 150, 0.59);
   -webkit-backdrop-filter: blur(4px);
@@ -465,10 +474,10 @@ a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -492,5 +501,5 @@ a:active {
 }
 
 .footer div {
-  width: 72%;
+  width: 44%;
 }

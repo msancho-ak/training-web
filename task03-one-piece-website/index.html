@@ -21,8 +21,8 @@
     />
     <link
       rel="stylesheet"
-      media="screen and (max-width: 720px) and (min-width: 481px) "
-      href="css/tablet/style.css"
+      media="screen and (min-width: 481px) and (max-width: 768px) "
+      href="css/tablet/tablet.css"
     />
   </head>
   <body>
@@ -103,7 +103,10 @@
       </div>
     </div>
 
-    <div id="characterSection" class="common-items-container">
+    <div
+      id="characterSection"
+      class="common-items-container common-items-container--margin"
+    >
       <div class="common-items-container_content">
         <div class="common-items-container_title">
           <div class="common-items-container_title--main">
@@ -126,13 +129,13 @@
               Portgas D. Ace
             </p>
           </div>
-          <div class="characters-container_grid_item classHide">
+          <div class="characters-container_grid_item hideMore">
             <img src="images/zoro.svg" alt="" />
             <p class="characters-container_grid_item_characterName">
               Roronoa Zoro
             </p>
           </div>
-          <div class="characters-container_grid_item classHide">
+          <div class="characters-container_grid_item hideMore">
             <img src="images/nico.svg" alt="" />
             <p class="characters-container_grid_item_characterName">
               Nico Robin
@@ -156,8 +159,7 @@
           <div class="island-container_grid_item">
             <img src="images/dawnIsland.svg" alt="" />
             <div class="island-container_grid_item_descripcion">
-              <spam>Dawn Island</spam>
-
+              <b><spam>Dawn Island</spam></b>
               <div class="island-container_grid_item_descripcion_region">
                 <img
                   style="width: 10px; height: 10px"
@@ -171,7 +173,22 @@
           <div class="island-container_grid_item">
             <img src="images/reverseIsland.svg" alt="" />
             <div class="island-container_grid_item_descripcion">
-              <spam>Reverse Island</spam>
+              <b><spam>Reverse Island</spam></b>
+              <div class="island-container_grid_item_descripcion_region">
+                <img
+                  style="width: 10px; height: 10px"
+                  src="images/loc.svg"
+                  alt=""
+                />
+                <span>Red Line</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="island-container_grid_item hideMore">
+            <img src="images/reverseIsland.svg" alt="" />
+            <div class="island-container_grid_item_descripcion">
+              <b><spam>Reverse Island</spam></b>
               <div class="island-container_grid_item_descripcion_region">
                 <img
                   style="width: 10px; height: 10px"
@@ -224,6 +241,18 @@
             </div>
           </div>
           <div class="mist-objects-container_grid_item">
+            <img src="images/gommu.svg" alt="" />
+            <div class="mist-container_grid_item_descripcion">
+              <b><spam>Gomu Gomu No Mi</spam></b>
+              <span>
+                Is a Paramecia-type Devil Fruit that gives the user's body the
+                properties of rubber, making the user a Rubber Human. It was
+                then accidentally eaten by the series protagonist, Monkey D.
+                Luffy.
+              </span>
+            </div>
+          </div>
+          <div class="mist-objects-container_grid_item hideMore">
             <img src="images/gommu.svg" alt="" />
             <div class="mist-container_grid_item_descripcion">
               <b><spam>Gomu Gomu No Mi</spam></b>
