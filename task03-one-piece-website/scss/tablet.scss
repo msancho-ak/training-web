@@ -152,7 +152,6 @@ a:active{color: $secondary-color;}
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    top:60px;
     position: relative;
     top: 0;
     &--margin{
@@ -234,6 +233,17 @@ a:active{color: $secondary-color;}
     border-radius: 10%;
     position: relative;
     overflow: hidden;
+
+
+    width: 22%;
+    height: 300px;
+    margin: 10px 0px;
+    background-image: linear-gradient(179.8deg, rgba(255, 255, 255, 0) 50.33%, #000000 97.62%);
+    border-radius: 10%;
+    position: relative;
+    overflow: hidden;
+
+    
     img{
         width: 100%;
         height: 190px;

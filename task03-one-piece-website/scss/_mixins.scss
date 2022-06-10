@@ -1,0 +1,490 @@
+@mixin flex($direction, $justifyContent, $alignItems) {
+    display: flex;
+    @if $justifyContent {
+      justify-content: $justifyContent;
+    }
+    @if $alignItems {
+      align-items: $alignItems;
+    }
+    @if $direction {
+      flex-direction: $direction;
+    }
+}
+
+
+@mixin menuContainer($breakpoint){
+  @include flex(null,null, center);
+  background-color: $general-background-color;
+  height: 78px;
+  @if ($breakpoint == phone) {
+    @media (max-width: 480px) and (min-width: 360px) {
+      // 900px
+      @content;
+    }
+  }
+  @if ($breakpoint == tablet )  {
+    @media (min-width: 481px) and (max-width: 768px)  {
+      // 1200px
+      @content;
+    }
+  }
+  @if ($breakpoint == desktop ) {
+    @media screen and (min-width: 769px) {
+    }
+  } 
+}
+
+
+
+@mixin menu-container_marginLeft($breakpoint){
+  @if ($breakpoint == phone) {
+    @media (max-width: 480px) and (min-width: 360px) {
+      // 900px
+      @content;
+    }
+  }
+  @if ($breakpoint == tablet )  {
+    @media (min-width: 481px) and (max-width: 768px)  {
+      // 1200px
+      @content;
+    }
+  }
+  @if ($breakpoint == desktop ) {
+    @media screen and (min-width: 769px) {
+      // 1800px
+      @content;
+    }
+  } 
+}
+
+@mixin menuItems($breakpoint){
+  @if ($breakpoint == phone or $breakpoint == tablet) {
+    @media  (min-width: 360px) and (max-width: 768px)  {
+      position: absolute;
+      z-index: 100;
+      height: 300px;
+      width: 100%;
+      background-color: $general-background-color;
+      font-size: 18px;
+      line-height: 24px;
+      color: #575757;
+      text-decoration: none;
+    }
+  }
+  @if ($breakpoint == desktop ) {
+    @media screen and (min-width: 769px) {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: -4%;
+      margin-bottom: 2%;
+    }
+  } 
+}
+
+@mixin boxShadow($breakpoint){
+  @if ($breakpoint == phone) {
+    @media (max-width: 480px) and (min-width: 360px) {
+      @content;
+    }
+  }
+}
+
+@mixin menuItem($breakpoint){
+  @if ($breakpoint == phone or $breakpoint == tablet) {
+    @media  (min-width: 360px) and (max-width: 768px) {
+      margin-bottom: 40px;
+    }
+  }
+  @if ($breakpoint == desktop ) {
+    @media screen and (min-width: 769px) {
+      width: 8vw;
+    }
+  } 
+}
+
+
+@mixin anchorStyle(){
+  font-size: 18px;
+  line-height: 24px;
+  color: #575757;
+  text-decoration: none;
+}
+
+@mixin sinopsisContainer($breakpoint){
+  @if ($breakpoint == phone or $breakpoint == tablet) {
+    @media  (min-width: 360px) and (max-width: 768px) {
+     @include flex( column, center , center );
+    }
+  }
+  @if ($breakpoint == desktop ) {
+    @media screen and (min-width: 769px) {
+      @include flex( null, null , null );
+      position: relative;
+    }
+  } 
+}
+
+@mixin sinopsisContainerImage($breakpoint){
+  position: relative;
+  @if ($breakpoint == phone or $breakpoint == tablet ) {
+    background-size: cover;
+    width: 100%;
+    @media (max-width: 480px) and (min-width: 360px) {
+      background: linear-gradient(180deg, rgba(196, 196, 196, 0) 70%, $general-background-color 91.54%);
+    }
+  }
+}
+
+@mixin sinopsisContainerImage_img($breakpoint){
+  @if ($breakpoint == phone or $breakpoint == tablet ) {
+    @media (min-width: 360px) and (max-width: 768px) {
+      position: relative;
+      z-index: -1;
+      display: block;
+      max-width: 100%;
+    }
+  }
+  @if ($breakpoint == desktop ) {
+    @media screen and (min-width: 769px) {
+      border-radius: 2%;
+      width: 64vw; 
+      margin-top: 1%;
+    }
+  } 
+}
+
+@mixin sinopsisContainerContent($breakpoint){
+  @if ($breakpoint == phone or $breakpoint == tablet ) {
+    border-radius: 6px;
+    padding: 8px;
+    gap: 16px;
+    width: 90%;
+    background: $general-background-color;
+    box-shadow: 0px 0px 8px #B8E1FF;
+    border-radius: 6px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-top: 10px;
+    @media (min-width: 481px) and (max-width: 768px) {
+      position: absolute;
+      top:0;
+      margin-top: 62%;
+      z-index: 1;
+    }
+  }
+  @if ($breakpoint == desktop ) {
+    @media screen and (min-width: 769px) {
+      position: absolute;
+      top:0;
+      bottom: 0;
+      left: 0;
+      margin-left: 67%;
+      border-radius: 6px;
+      -webkit-box-flex: 0;
+      background-color: white;
+      z-index: 1;
+      box-shadow: 0px 0px 8px #B8E1FF;
+      width: auto;
+    }
+  } 
+}
+
+@mixin titleStyle() {
+  align-self: flex-start;
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  @media screen and (min-width: 769px) {
+    align-items: flex-start;
+  }
+}
+
+@mixin fontFamilyRoboto{
+  font-family: 'Roboto';
+  font-style: normal;
+}
+
+
+@mixin hideMore{
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}
+@mixin hideDesktop{
+  
+  @media screen and (min-width: 769px) {
+      display: none;
+    }
+}
+
+
+@mixin spaceUnderAbsolute{
+  @media screen and (min-width: 481px)  and (max-width:768px){
+    height: 200px;
+  }
+}
+
+@mixin commonItemsContainer($breakpoint){
+
+  @if($breakpoint == phone){
+    top:0;
+  }
+  @else{
+    top:60px;
+  }
+  
+}
+
+@mixin commonItemsContainerContentWidth {
+  width: 90%;
+  @media screen and (min-width: 769px) {
+    width: 98%;
+  }
+  
+}
+
+@mixin charactersContainergridItem{
+  margin: 10px 0px;
+  background-image: linear-gradient(179.8deg, rgba(255, 255, 255, 0) 50.33%, #000000 97.62%);
+  border-radius: 10%;
+  position: relative;
+  @media (max-width: 480px) and (min-width: 360px) {
+    width: 140px;
+    height: 190px;
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+    width: 22%;
+    height: 192px;
+  }
+  @media screen and (min-width: 769px) {
+    width: 22%;
+    height: 300px;
+  }
+
+  @media (min-width: 481px)  {
+    overflow: hidden;
+  }
+
+}
+
+@mixin charactersContainergridItemImg{
+  width: 140px;
+  position: absolute;
+  z-index: -1;
+  @media (max-width: 480px) and (min-width: 360px) {
+    height: 200px;
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+    height: 190px;
+  }
+  @media screen and (min-width: 769px) {
+    height: 300px;
+    
+  }
+
+  @media (min-width: 481px)  {
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+}
+
+
+@mixin islandContainerGridItem{
+  position: relative;
+  @media (min-width: 481px) and (max-width: 768px) {
+    width: 32%;
+  }
+  @media screen and (min-width: 769px) {
+    width: 24%;
+  }
+
+}
+
+@mixin islandContainerGridItemDescription{
+  position: absolute;
+  background: rgba(0, 96, 150, 0.59);
+  backdrop-filter: blur(4px);
+  border-radius: 6px;
+  padding-left: 10%;
+  color: $general-background-color;
+  font-weight: 700;
+  top:0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.5px;
+  @include fontFamilyRoboto();
+  @media (max-width: 480px) and (min-width: 360px) {
+    top: 90px;
+    width: 108px;
+    height: 45px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+    width: 108px;
+    height: 20%;
+    margin-top: 75%;
+    font-size: 2vw;
+    line-height: 16px;
+  }
+  @media screen and (min-width: 769px) {
+    width: 108px;
+    height: 20%;
+    margin-top: 75%;
+    font-size: 16px;
+    line-height: 14px;
+  }
+}
+
+
+@mixin islandContainerGridItemImg{
+
+  @include fontFamilyRoboto();
+  @media (max-width: 480px) and (min-width: 360px) {
+    width: 150px;
+    height: 150px;
+  }
+  @media (min-width: 481px)  {
+    width: 100%;
+    border-radius: 10%;
+  }
+}
+
+@mixin mistContainerGridItem{
+  @media (max-width: 480px) and (min-width: 360px) {
+    width: 100%;
+  }
+  @media (min-width: 481px)  {
+    width: 50%;
+  }
+}
+
+@mixin mistContainerGridItemImg{
+  @media (max-width: 768px) and (min-width: 481px) {
+    width: 62%;
+  }
+  @media (min-width: 769px)  {
+    width: 62%;
+  }
+}
+
+
+@mixin mistContainerGridItemDescription{
+  position: absolute;
+  @include flex(column, null, flex-start);
+  @include fontFamilyRoboto;
+  background: rgba(0, 96, 150, 0.59);
+  backdrop-filter: blur(4px);
+  border-radius: 0px 6px 6px 0px;
+  padding: 10px;
+  top: 0px;
+  bottom: 0;
+  font-weight: 400;
+  color: #F4F4F4;
+  letter-spacing: 0.4px;
+  @media (max-width: 480px) and (min-width: 360px) {
+    height: 112px;
+    left: 90px;
+    font-size: 13px;
+    line-height: 15px;
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+    margin-right: 2%;
+    left: 73px;
+    font-weight: 400;
+    font-size: 1.2vw;
+    line-height: 1.9vw;
+    letter-spacing: 0.4px;
+    margin-bottom: 4px;
+  }
+  @media screen and (min-width: 769px) {
+    margin-left: 40%;
+    margin-right: 2%;
+    margin-bottom: 4px;
+    font-size: 1.2vw;
+    line-height: 1.9vw;
+    letter-spacing: 0.4px;
+  }
+  @media (min-width: 481px){
+  }
+}
+
+@mixin footer{
+  margin-top: 10%;
+  @include flex(column,center,center);
+  @include fontFamilyRoboto;
+  background: $secondary-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  color: $general-background-color;
+  padding: 48px 0px;
+  gap: 38px;
+  width: 100%;
+  height: 140px;
+  @media (min-width: 769px) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+}
+
+@mixin footerDiv{
+  @media (min-width: 360px) and (max-width: 480px) {
+    width: 72%;
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+    width: 44%;
+  }
+  @media screen and (min-width: 769px) {
+    text-align: left;
+    width: 24%;
+  }
+}
+
+
+@mixin division{
+  @media(max-width: 768px) {
+    width: 100%;
+    border-bottom:0.5px solid #0C75AF;
+  }
+}
+
+
+@mixin body{
+  @media (max-width: 768px)  {
+    margin: 0% 0%;
+  }
+  @media screen and (min-width: 769px) {
+    margin: 2% 10% 0 10%;
+  }
+}
+
+
+@mixin fontSizeLH{
+  @media (min-width: 360px) and (max-width: 480px) {
+    font-size: 16px;
+    line-height: 20px;
+   
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+    font-size: 1.2vw;
+    line-height: 1.7vw;
+  }
+  @media screen and (min-width: 769px) {
+    text-align: left;
+    font-size: 1.2vw;
+    line-height: 1.7vw;
+  }
+
+}
