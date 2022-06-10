@@ -309,7 +309,8 @@ a:active{color: $secondary-color;}
     margin-right: 2%;
     position: absolute;
     left: 73px;
-    top: 0px;
+    top: 0;
+    bottom:0;
     background: rgba(0, 96, 150, 0.59);
     backdrop-filter: blur(4px);
     border-radius: 0px 6px 6px 0px;
@@ -324,6 +325,8 @@ a:active{color: $secondary-color;}
     order: 1;
     align-self: stretch;
     flex-grow: 0;
+    margin-bottom: 4px;
+    overflow: scroll;
 }
 
 .footer{

@@ -453,7 +453,8 @@ a:active {
   margin-right: 2%;
   position: absolute;
   left: 73px;
-  top: 0px;
+  top: 0;
+  bottom: 0;
   background: rgba(0, 96, 150, 0.59);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
@@ -475,6 +476,8 @@ a:active {
       align-self: stretch;
   -ms-flex-positive: 0;
       flex-grow: 0;
+  margin-bottom: 4px;
+  overflow: scroll;
 }
 
 .footer {
