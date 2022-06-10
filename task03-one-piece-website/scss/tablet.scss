@@ -297,7 +297,7 @@ a:active{color: $secondary-color;}
     position: relative;
     width: 50%;
     img{
-        width: 50%;
+        width: 62%;
     }
 }
   
@@ -306,8 +306,7 @@ a:active{color: $secondary-color;}
     padding: 10px;
     flex-direction: column;
     align-items: flex-start;
-    height: 110px;
-    width: 242px;
+    margin-right: 2%;
     position: absolute;
     left: 73px;
     top: 0px;
@@ -317,7 +316,7 @@ a:active{color: $secondary-color;}
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 1.9vw;
     line-height: 16px;
     letter-spacing: 0.4px;
     color: #F4F4F4;

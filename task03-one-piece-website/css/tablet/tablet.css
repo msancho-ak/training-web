@@ -13,7 +13,7 @@ body {
 }
 
 .space-under-absolute {
-  height: 45vh;
+  height: 200px;
 }
 
 .menu-container {
@@ -435,7 +435,7 @@ a:active {
 }
 
 .mist-objects-container_grid_item img {
-  width: 50%;
+  width: 62%;
 }
 
 .mist-container_grid_item_descripcion {
@@ -450,8 +450,7 @@ a:active {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  height: 110px;
-  width: 242px;
+  margin-right: 2%;
   position: absolute;
   left: 73px;
   top: 0px;
@@ -462,7 +461,7 @@ a:active {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.9vw;
   line-height: 16px;
   letter-spacing: 0.4px;
   color: #F4F4F4;

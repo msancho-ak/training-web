@@ -433,7 +433,6 @@ a:active {
       -ms-flex-align: start;
           align-items: flex-start;
   height: 112px;
-  width: 225px;
   position: absolute;
   left: 90px;
   top: 0px;
@@ -444,8 +443,8 @@ a:active {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 13px;
+  line-height: 15px;
   letter-spacing: 0.4px;
   color: #F4F4F4;
   -webkit-box-flex: 0;
