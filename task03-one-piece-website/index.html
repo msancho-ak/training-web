@@ -24,10 +24,15 @@
       media="screen and (min-width: 481px) and (max-width: 768px) "
       href="css/tablet/tablet.css"
     />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 769px)"
+      href="css/desktop/desktop.css"
+    />
   </head>
   <body>
     <div class="menu-container">
-      <div class="menu-container_icon" onclick="showOrHideMenu()">
+      <div class="menu-container_icon hideDesktop" onclick="showOrHideMenu()">
         <img id="iconMenu" src="images/menu.svg" alt="" />
       </div>
       <div class="menu-container_logo">
@@ -43,13 +48,13 @@
       <div class="menu_item">
         <div class="languages">
           <div class="languages_item languages_item--selected">
-            English
+            <span class="hideDesktop"> English</span>
             <img src="images/usa.svg" alt="" />
           </div>
         </div>
         <div class="languages">
           <div class="languages_item">
-            Spanish
+            <span class="hideDesktop">Spanish</span>
             <img src="images/spain.svg" alt="" />
           </div>
         </div>
@@ -59,7 +64,7 @@
       <div class="sinopsis-container_image">
         <img src="images/mainImage.svg" alt="" />
       </div>
-      <div id="logoReadMore" class="classHide">
+      <div id="logoReadMore" class="hideDesktop">
         <img src="images/One-Piece-Logo 1.svg" alt="" />
       </div>
       <div class="sinopsis-container_content">
@@ -92,9 +97,9 @@
             </p>
           </div>
         </div>
-        <div class="division"></div>
+        <div class="division hideDesktop"></div>
         <div
-          class="sinopsis-container_content_readAll"
+          class="sinopsis-container_content_readAll hideDesktop"
           onclick="readMoreOrLess()"
         >
           <img id="readMoreIcon" src="images/readMore.svg" alt="" />
@@ -185,6 +190,21 @@
           </div>
 
           <div class="island-container_grid_item hideMore">
+            <img src="images/reverseIsland.svg" alt="" />
+            <div class="island-container_grid_item_descripcion">
+              <b><spam>Reverse Island</spam></b>
+              <div class="island-container_grid_item_descripcion_region">
+                <img
+                  style="width: 10px; height: 10px"
+                  src="images/loc.svg"
+                  alt=""
+                />
+                <span>Red Line</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="island-container_grid_item classHide">
             <img src="images/reverseIsland.svg" alt="" />
             <div class="island-container_grid_item_descripcion">
               <b><spam>Reverse Island</spam></b>
