@@ -207,7 +207,11 @@
   font-style: normal;
 }
 
-
+@mixin hideMenu{
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
 @mixin hideMore{
   @media screen and (max-width: 480px) {
     display: none;
@@ -319,23 +323,21 @@
   margin-left: auto;
   margin-right: auto;
   letter-spacing: 0.5px;
+  width: 60%;
   @include fontFamilyRoboto();
   @media (max-width: 480px) and (min-width: 360px) {
     top: 90px;
-    width: 108px;
     height: 45px;
     font-size: 13px;
     line-height: 16px;
   }
   @media (min-width: 481px) and (max-width: 768px) {
-    width: 108px;
     height: 20%;
     margin-top: 75%;
     font-size: 2vw;
     line-height: 16px;
   }
   @media screen and (min-width: 769px) {
-    width: 108px;
     height: 20%;
     margin-top: 75%;
     font-size: 16px;
@@ -478,13 +480,13 @@
    
   }
   @media (min-width: 481px) and (max-width: 768px) {
-    font-size: 1.2vw;
-    line-height: 1.7vw;
+    font-size: 2.2vw;
+    line-height: 2.7vw;
   }
   @media screen and (min-width: 769px) {
     text-align: left;
     font-size: 1.2vw;
-    line-height: 1.7vw;
+    line-height: 1.5vw;
   }
 
 }
