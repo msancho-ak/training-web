@@ -1,0 +1,259 @@
+@import 'variables';
+@import 'mixins';
+
+body{
+    @include body;
+}
+
+.hideMore{
+    @include hideMore;
+}
+
+.hideTablet{
+    @include hideTablet;
+}
+
+.space-under-absolute{
+    @include spaceUnderAbsolute;
+
+}
+.menu-container{
+    @include menuContainer(phone);
+    @include menuContainer(tablet);
+    @include menuContainer(desktop){
+    };
+    &_icon{
+        @include flex(null,center, null);
+        @include menu-container_marginLeft(phone){
+            margin-left: 5%;
+        }
+        @include menu-container_marginLeft(tablet){
+            margin-left: 5%;;
+        }
+    }
+    &_logo{
+        @include flex(null,null, null);
+        @include menu-container_marginLeft(phone){
+            margin-left: 31vw;
+        }
+        @include menu-container_marginLeft(tablet){
+            margin-left: 31vw;
+        }
+        width: 100%;
+        img{
+            width: 112px;
+            height: 40px;
+        }
+    }
+}
+
+.menu_items{
+    @include menuItems(phone);
+    @include menuItems(desktop);
+    @include boxShadow(phone){
+        box-shadow: 0px 4px 3px #F3F3F3;
+    }    
+}
+
+.menu_item{
+    @include flex(null, center, null);
+    @include menuItem(phone);
+    @include menuItem(desktop);
+}
+
+.languages{
+    width: 50%;
+    @include flex(null, center, center);
+    img{
+        width: 22px;
+        margin-left: 5px;
+    }
+    &_item{
+        width: 90%;
+        @include flex(null, center, center);
+        &--selected{
+            background-color: #ECECEC;
+        }
+    }
+}
+
+a{
+   @include anchorStyle()
+}
+.menu_item:hover{
+    text-decoration: underline $secondary-color;
+}
+
+a:active{color: $secondary-color;}
+
+.sinopsis-container{
+    @include sinopsisContainer(phone);
+    @include sinopsisContainer(desktop);
+    &_image{
+        @include sinopsisContainerImage(phone);
+        @include sinopsisContainerImage(tablet);
+        @include sinopsisContainerImage(desktop);
+        img {
+            @include sinopsisContainerImage_img(phone);
+            @include sinopsisContainerImage_img(desktop);
+          }
+    }
+    &_content{
+        @include flex(column, null, center);
+        @include sinopsisContainerContent(phone);
+        @include sinopsisContainerContent(desktop);
+        &_title{
+            @include titleStyle();
+        }
+        &_text {
+            @include fontFamilyRoboto;
+            font-weight: 400;
+            @include fontSizeLH;
+            letter-spacing: 0.25px;
+            color: #000000;
+        }
+        &_readAll{
+            @include fontFamilyRoboto;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 0.15px;
+            color: $secondary-color;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            img{
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.common-items-container{
+    @include flex(column,center,center);
+    @include commonItemsContainer(phone);
+    @include commonItemsContainer(others);
+    &_grid{
+        @include flex(null, space-around, null);
+        flex-wrap: wrap;
+        width: 100%;
+        &--start{
+            @include flex(null, flex-start, null);
+            flex-wrap: wrap;
+            width: 100%;
+        }
+    }
+    &_content{
+        @include flex(column, null, center);
+        padding: 8px;
+        gap: 16px;
+        @include commonItemsContainerContentWidth;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin-top: 10px;
+    }
+    &_title{
+        width: 100%;
+        @include flex(null, space-between, null);
+        &--main{
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            @include flex(null, null, flex-end);
+            text-align: center;
+            letter-spacing: 0.1px;
+            color: #171717;
+        }
+        &-see-all{
+            @include fontFamilyRoboto;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            display: flex;
+            @include flex(null, null, center);
+            letter-spacing: 0.25px;
+            color: $secondary-color;
+        }
+    }
+}
+
+.characters-container_content_text{
+    @include fontFamilyRoboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+    letter-spacing: 0.25px;
+    color: #000000;
+}
+
+.characters-container_grid_item{
+    @include charactersContainergridItem;
+    img{
+        @include charactersContainergridItemImg;
+    }
+    &_characterName{
+        position: absolute;
+        color: $general-background-color;
+        text-align: center;
+        top: 70%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+        @include fontFamilyRoboto;
+    }
+}
+
+.island-container_grid_item{
+   @include islandContainerGridItem;
+    &_descripcion{
+        @include flex(column, center, null);
+        @include islandContainerGridItemDescription;
+    }
+    img{
+        @include islandContainerGridItemImg;
+    }
+}
+
+.mist-objects-container_grid_item{
+    position: relative;
+    margin: 5px 0px;
+    @include mistContainerGridItem;
+    img{
+        @include mistContainerGridItemImg;
+    }
+}
+  
+.mist-container_grid_item_descripcion{
+    @include mistContainerGridItemDescription;    
+}
+
+
+.footer{
+   
+   @include footer;
+    div{
+        @include footerDiv;
+    }
+}
+
+.hideDesktop{
+    @include hideDesktop;
+}
+
+.hideMenu{
+    @include hideMenu;
+}
+
+.division{
+    @include division;
+}
+
+.searchElement{
+    @include searchInput();
+}
