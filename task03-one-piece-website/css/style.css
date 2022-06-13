@@ -940,7 +940,7 @@ a:active {
 
 @media screen and (min-width: 769px) {
   .searchElement {
-    width: 100%;
+    width: 95%;
     font-size: 12px;
     margin-left: 0%;
   }
