@@ -9,7 +9,9 @@ body{
     @include hideMore;
 }
 
-
+.hideTablet{
+    @include hideTablet;
+}
 
 .space-under-absolute{
     @include spaceUnderAbsolute;
@@ -250,4 +252,8 @@ a:active{color: $secondary-color;}
 
 .division{
     @include division;
+}
+
+.searchElement{
+    @include searchInput();
 }
