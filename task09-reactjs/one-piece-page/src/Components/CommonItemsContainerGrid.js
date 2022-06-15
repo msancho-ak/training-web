@@ -5,9 +5,11 @@ import zoro from '../images/zoro.svg'
 import nico from '../images/nico.svg'
 import dawn from '../images/dawnIsland.jpg'
 import reverse from '../images/reverseIslando.jpg'
+import gomu from '../images/gommu.svg'
 
 import CharactersContainerGridItem from './CharactersContainerGridItem';
 import IslandContainerGridItem from './IslandContainerGridItem';
+import MistObjectGridItem from './MistObjectGridItem';
 
 
 export default class CommonItemsContainerGrid extends Component{
@@ -30,6 +32,14 @@ export default class CommonItemsContainerGrid extends Component{
                 </div>)
         }
 
+        if(this.props.type === "Mist Objects"){
+            return (<div className='common-items-container_grid common-items-container_grid--start'>
+                    {this.props.Mist.map( (elem, index) => 
+                                                <MistObjectGridItem 
+                                                        key={index} name={elem.name} img={elem.img} 
+                                                        description={elem.description}/>)}
+                </div>)
+        }
     }
 }
 
@@ -73,6 +83,28 @@ CommonItemsContainerGrid.defaultProps = {
             name:"Reverse Island",
             img:reverse,
             location: "East Blue"
+        },
+    ],
+    Mist :[
+        {
+            name:"Gomu Gomu No Mi",
+            img:gomu,
+            description: "Is a Paramecia-type Devil Fruit that gives the user's body the properties of rubber, making the user a Rubber Human. It was then accidentally eaten by the series protagonist, Monkey D. Luffy."
+        },
+        {
+            name:"Gomu Gomu No Mi",
+            img:gomu,
+            description: "Is a Paramecia-type Devil Fruit that gives the user's body the properties of rubber, making the user a Rubber Human. It was then accidentally eaten by the series protagonist, Monkey D. Luffy."
+        },
+        {
+            name:"Gomu Gomu No Mi",
+            img:gomu,
+            description: "Is a Paramecia-type Devil Fruit that gives the user's body the properties of rubber, making the user a Rubber Human. It was then accidentally eaten by the series protagonist, Monkey D. Luffy."
+        },
+        {
+            name:"Gomu Gomu No Mi",
+            img:gomu,
+            description: "Is a Paramecia-type Devil Fruit that gives the user's body the properties of rubber, making the user a Rubber Human. It was then accidentally eaten by the series protagonist, Monkey D. Luffy."
         },
     ]
 }

@@ -14,6 +14,7 @@ function App() {
      <SearchSection PlaceHolder="Search Characters, Islands or Objects"></SearchSection>
      <CommonItemsContainer ID="characterSection" title="Characters"></CommonItemsContainer>
      <CommonItemsContainer ID="islandSection" title="Islands"></CommonItemsContainer>
+     <CommonItemsContainer ID="mistSection" title="Mist Objects"></CommonItemsContainer>
      
     </>
    

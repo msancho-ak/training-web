@@ -18,6 +18,7 @@ export default class CommonItemsContainer extends Component{
                         </div>
                         {this.props.title==="Characters"? <CommonItemsContainerGrid type={this.props.title}></CommonItemsContainerGrid>:""}
                         {this.props.title==="Islands"? <CommonItemsContainerGrid type={this.props.title}></CommonItemsContainerGrid>:""}
+                        {this.props.title==="Mist Objects"? <CommonItemsContainerGrid type={this.props.title}></CommonItemsContainerGrid>:""}
                     </div>
                 </div>
           )
