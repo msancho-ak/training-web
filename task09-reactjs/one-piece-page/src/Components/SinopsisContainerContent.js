@@ -8,7 +8,7 @@ export default class SinopsisContainerContent extends Component{
         return(<div className="sinopsis-container_content">
                 <SinopsisContainerContentTitle title="Sipnosis"></SinopsisContainerContentTitle>
                 <SinopsisContainerContentText></SinopsisContainerContentText>
-                <div class="division hideDesktop"></div>
+                <div className="division hideDesktop"></div>
                 <SinopsisContainerContentReadAll></SinopsisContainerContentReadAll>
                </div>)
     }

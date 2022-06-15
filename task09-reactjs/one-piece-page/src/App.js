@@ -13,6 +13,7 @@ function App() {
      <div className="space-under-absolute"></div>
      <SearchSection PlaceHolder="Search Characters, Islands or Objects"></SearchSection>
      <CommonItemsContainer ID="characterSection" title="Characters"></CommonItemsContainer>
+     <CommonItemsContainer ID="islandSection" title="Islands"></CommonItemsContainer>
      
     </>
    
