@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import LanguagesItem from './LanguagesItem';
 export default class MenuItem extends Component{
     constructor(props){
         super(props);
@@ -8,6 +8,8 @@ export default class MenuItem extends Component{
         if(this.props.link!==undefined)
             return <div className="menu_item"><a href={this.props.link}>{this.props.name}</a></div>
         else
-            return <div className="menu_item">{this.props.language}</div>
+            return (<div className="menu_item">
+                {this.props.languages.map( (elem, index) => <LanguagesItem key={index} Language={elem}></LanguagesItem>)}
+                </div>)
     }
 } 
