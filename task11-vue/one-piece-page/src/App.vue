@@ -2,6 +2,7 @@
   <div>
     <MenuContainer></MenuContainer>
     <MenuOptionsVue></MenuOptionsVue>
+    <SinopsisContainerVue></SinopsisContainerVue>
   </div>
   
 </template>
@@ -9,10 +10,11 @@
 <script>
 import MenuContainer from './components/MenuContainer.vue'
 import MenuOptionsVue from './components/MenuOptions.vue'
+import SinopsisContainerVue from './components/SinopsisContainer.vue'
 
 export default {
   name: 'App',
-  components: { MenuContainer,MenuOptionsVue },
+  components: { MenuContainer,MenuOptionsVue,SinopsisContainerVue  },
 
 }
 </script>
