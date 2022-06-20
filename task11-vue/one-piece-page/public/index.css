@@ -906,20 +906,7 @@
     }
   }
   
-  .searchElement {
-    height: 35px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.25px;
-    color: #e0dddd;
-    border: 1px solid #e0dddd;
-    border-radius: 5px;
-    background: url(images/search.svg) no-repeat scroll 7px 7px;
-    padding-left: 48px;
-  }
+  
   
   @media (min-width: 320px) and (max-width: 480px) {
     .searchElement {
