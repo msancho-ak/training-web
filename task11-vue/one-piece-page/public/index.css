@@ -247,6 +247,7 @@
   }
   
   .sinopsis-container_image {
+    display: flex;
     position: relative;
     background-size: cover;
     width: 100%;

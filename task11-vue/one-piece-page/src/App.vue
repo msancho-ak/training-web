@@ -7,6 +7,7 @@
      <CommonItemsContainerVue ID="characterSection" title="Characters"></CommonItemsContainerVue>
      <CommonItemsContainerVue ID="islandSection" title="Islands"></CommonItemsContainerVue>
      <CommonItemsContainerVue ID="mistSection" title="Mist Objects"></CommonItemsContainerVue>
+     <FooterVue></FooterVue>
 
   </div>
   
@@ -18,10 +19,11 @@ import MenuOptionsVue from './components/MenuOptions.vue'
 import SinopsisContainerVue from './components/SinopsisContainer.vue'
 import SearchSectionVue from './components/SearchSection.vue'
 import CommonItemsContainerVue from './components/CommonItemsContainer.vue'
+import FooterVue from './components/FooterComponent.vue'
 
 export default {
   name: 'App',
-  components: { MenuContainer,MenuOptionsVue,SinopsisContainerVue, SearchSectionVue,CommonItemsContainerVue  },
+  components: { MenuContainer,MenuOptionsVue,SinopsisContainerVue, SearchSectionVue,CommonItemsContainerVue ,FooterVue },
 
 }
 </script>
