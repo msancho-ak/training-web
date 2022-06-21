@@ -5,6 +5,7 @@
     <SinopsisContainerVue></SinopsisContainerVue>
     <SearchSectionVue PlaceHolder="Search Characters, Islands or Objects"></SearchSectionVue >
      <CommonItemsContainerVue ID="characterSection" title="Characters"></CommonItemsContainerVue>
+     <CommonItemsContainerVue ID="islandSection" title="Islands"></CommonItemsContainerVue>
   </div>
   
 </template>
