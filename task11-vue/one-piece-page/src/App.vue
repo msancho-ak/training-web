@@ -4,6 +4,7 @@
     <MenuOptionsVue></MenuOptionsVue>
     <SinopsisContainerVue></SinopsisContainerVue>
     <SearchSectionVue PlaceHolder="Search Characters, Islands or Objects"></SearchSectionVue >
+     <CommonItemsContainerVue ID="characterSection" title="Characters"></CommonItemsContainerVue>
   </div>
   
 </template>
@@ -13,10 +14,11 @@ import MenuContainer from './components/MenuContainer.vue'
 import MenuOptionsVue from './components/MenuOptions.vue'
 import SinopsisContainerVue from './components/SinopsisContainer.vue'
 import SearchSectionVue from './components/SearchSection.vue'
+import CommonItemsContainerVue from './components/CommonItemsContainer.vue'
 
 export default {
   name: 'App',
-  components: { MenuContainer,MenuOptionsVue,SinopsisContainerVue, SearchSectionVue  },
+  components: { MenuContainer,MenuOptionsVue,SinopsisContainerVue, SearchSectionVue,CommonItemsContainerVue  },
 
 }
 </script>

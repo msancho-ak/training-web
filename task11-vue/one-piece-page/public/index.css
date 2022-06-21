@@ -577,6 +577,7 @@
     width: 140px;
     position: absolute;
     z-index: -1;
+    left:0;
   }
   
   @media (max-width: 480px) and (min-width: 320px) {
