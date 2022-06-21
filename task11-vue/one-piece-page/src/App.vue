@@ -3,11 +3,12 @@
     <MenuContainer></MenuContainer>
     <MenuOptionsVue></MenuOptionsVue>
     <SinopsisContainerVue></SinopsisContainerVue>
+    <div id="space" className="space-under-absolute"></div>
     <SearchSectionVue PlaceHolder="Search Characters, Islands or Objects"></SearchSectionVue >
-     <CommonItemsContainerVue ID="characterSection" title="Characters"></CommonItemsContainerVue>
-     <CommonItemsContainerVue ID="islandSection" title="Islands"></CommonItemsContainerVue>
-     <CommonItemsContainerVue ID="mistSection" title="Mist Objects"></CommonItemsContainerVue>
-     <FooterVue></FooterVue>
+    <CommonItemsContainerVue ID="characterSection" title="Characters"></CommonItemsContainerVue>
+    <CommonItemsContainerVue ID="islandSection" title="Islands"></CommonItemsContainerVue>
+    <CommonItemsContainerVue ID="mistSection" title="Mist Objects"></CommonItemsContainerVue>
+    <FooterVue></FooterVue>
 
   </div>
   

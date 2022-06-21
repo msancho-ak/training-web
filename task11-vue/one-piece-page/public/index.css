@@ -221,6 +221,7 @@
   
   @media (min-width: 320px) and (max-width: 768px) {
     .sinopsis-container {
+      text-align: left;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
