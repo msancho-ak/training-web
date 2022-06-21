@@ -1,5 +1,5 @@
 <template>
-    <div class="island-container_grid_item"  :class="mostrar && 'hideTablet' || index > 1 && 'hideMore'" >
+    <div class="island-container_grid_item"  :class="[mostrar && 'hideTablet', index>1 && 'hideMore']" >
         <img :src="img" alt="" />
         <div class="island-container_grid_item_descripcion">
         <b><span>{{name}}</span></b>

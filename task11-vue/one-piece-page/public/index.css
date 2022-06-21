@@ -720,6 +720,7 @@
   }
   
   .mist-objects-container_grid_item {
+    display: flex;
     position: relative;
     margin: 5px 0px;
   }
@@ -772,6 +773,7 @@
     font-weight: 400;
     color: #F4F4F4;
     letter-spacing: 0.4px;
+    text-align: left;
   }
   
   @media (max-width: 480px) and (min-width: 320px) {
@@ -791,7 +793,6 @@
       font-size: 1.8vw;
       line-height: 1.9vw;
       letter-spacing: 0.4px;
-      margin-bottom: 4px;
     }
   }
   
@@ -799,7 +800,6 @@
     .mist-container_grid_item_descripcion {
       margin-left: 40%;
       margin-right: 2%;
-      margin-bottom: 4px;
       font-size: 1.2vw;
       line-height: 1.9vw;
       letter-spacing: 0.4px;

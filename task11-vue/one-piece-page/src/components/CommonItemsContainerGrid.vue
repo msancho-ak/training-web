@@ -4,25 +4,27 @@
                                     :mostrar="index<2"  :text="character.name" :imgPath="character.imgPath"/>
     </div>
     <div v-else-if="type==='Islands'" class="common-items-container_grid">
-    <IslandContainerGridItemVue v-for="(island, index) in Islands" 
-                                        :key="index" 
-                                        :img="island.img" 
-                                        :location="island.location" 
-                                        :name="island.name"
-                                        :mostrar="index>2"/> 
-   
-
-
+        <IslandContainerGridItemVue v-for="(island, index) in Islands" 
+                                            :key="index" 
+                                            :img="island.img" 
+                                            :location="island.location" 
+                                            :name="island.name"
+                                            :mostrar="index>2"
+                                            :index="index"/> 
+    </div>
+    <div v-else class="common-items-container_grid common-items-container_grid--start">
+        <MistObjectGridItemVue v-for="(mis,index) in Mist" :key="index" :img="mis.img" :name="mis.name" :description="mis.description"/>
     </div>
 </template>
 
 <script>
     import CharactersContainerGridItemVue from './CharactersContainerGridItem.vue'
     import IslandContainerGridItemVue from './IslandContainerGridItem.vue'
+    import MistObjectGridItemVue from './MistObjectGridItem.vue'
     export default {
         name:"CommonItemsContainerGrid",
         props:["type"],
-        components:{ CharactersContainerGridItemVue, IslandContainerGridItemVue },
+        components:{ CharactersContainerGridItemVue, IslandContainerGridItemVue, MistObjectGridItemVue },
         data(){
             return{
                 Characters :[
@@ -68,22 +70,22 @@
                 Mist :[
                     {
                         name:"Gomu Gomu No Mi",
-                        img:"gomu",
+                        img:require("../assets/gommu.svg"),
                         description: "Is a Paramecia-type Devil Fruit that gives the user's body the properties of rubber, making the user a Rubber Human. It was then accidentally eaten by the series protagonist, Monkey D. Luffy."
                     },
                     {
                         name:"Gomu Gomu No Mi",
-                        img:"gomu",
+                        img:require("../assets/gommu.svg"),
                         description: "Is a Paramecia-type Devil Fruit that gives the user's body the properties of rubber, making the user a Rubber Human. It was then accidentally eaten by the series protagonist, Monkey D. Luffy."
                     },
                     {
                         name:"Gomu Gomu No Mi",
-                        img:"gomu",
+                        img:require("../assets/gommu.svg"),
                         description: "Is a Paramecia-type Devil Fruit that gives the user's body the properties of rubber, making the user a Rubber Human. It was then accidentally eaten by the series protagonist, Monkey D. Luffy."
                     },
                     {
                         name:"Gomu Gomu No Mi",
-                        img:"gomu",
+                        img:require("../assets/gommu.svg"),
                         description: "Is a Paramecia-type Devil Fruit that gives the user's body the properties of rubber, making the user a Rubber Human. It was then accidentally eaten by the series protagonist, Monkey D. Luffy."
                     },
                 ]
