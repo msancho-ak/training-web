@@ -11,7 +11,7 @@ export default class LanguagesItem extends Component{
         return(
             <div className= {`languages_item ${this.props.Language === "English"? " languages_item--selected" : ""} `}>
                 <span className="hideDesktop"> {this.props.Language}</span>
-                <Image src={this.props.Language === "English"? englishIcon : spanishIcon} alt="" />
+                <img src={this.props.Language === "English"? englishIcon : spanishIcon} alt="" />
             </div>
         )
     }
