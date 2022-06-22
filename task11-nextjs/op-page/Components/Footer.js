@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import footerImage from '../images/pngwing.svg'
+import footerImage from '../public/images/pngwing.svg'
 
 export default class Footer extends Component{
     constructor(props){

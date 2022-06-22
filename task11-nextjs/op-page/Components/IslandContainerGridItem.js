@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import location from '../images/loc.svg'
+import location from '../public/images/loc.svg'
 
 const logoStyle={
     width:'10px',

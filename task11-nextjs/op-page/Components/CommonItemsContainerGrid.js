@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import luffy from '../images/monkeydluffy.svg'
-import ace from '../images/ace.svg'
-import zoro from '../images/zoro.svg'
-import nico from '../images/nico.svg'
-import dawn from '../images/dawnIsland.jpg'
-import reverse from '../images/reverseIslando.jpg'
-import gomu from '../images/gommu.svg'
+import luffy from '../public/images/monkeydluffy.svg'
+import ace from '../public/images/ace.svg'
+import zoro from '../public/images/zoro.svg'
+import nico from '../public/images/nico.svg'
+import dawn from '../public/images/dawnIsland.svg'
+import reverse from '../public/images/reverseIsland.svg'
+import gomu from '../public/images/gommu.svg'
 
 import CharactersContainerGridItem from './CharactersContainerGridItem';
 import IslandContainerGridItem from './IslandContainerGridItem';
