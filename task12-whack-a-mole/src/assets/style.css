@@ -18,11 +18,28 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 10rem;
   line-height: 1;
   margin: 2rem 5rem;
   background: #ffc600;
   font-family: 'Amatic SC', cursive;
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 769px) {
+  h1 {
+    font-size: 10rem;
+  }
 }
 
 .score {
@@ -32,7 +49,6 @@ h1 {
 }
 
 .game {
-  width: 600px;
   height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,6 +56,27 @@ h1 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 auto;
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+  .game {
+    width: 100vw;
+    height: 250px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .game {
+    width: 90vw;
+    height: 320px;
+  }
+}
+
+@media (min-width: 769px) {
+  .game {
+    width: 600px;
+    height: 400px;
+  }
 }
 
 .hole {
@@ -64,7 +101,6 @@ h1 {
 
 .mole {
   background: url("./imgs/mole.svg") bottom center no-repeat;
-  background-size: 60%;
   position: absolute;
   top: 100%;
   width: 100%;
@@ -73,7 +109,23 @@ h1 {
   transition: all 0.4s;
 }
 
+@media (max-width: 480px) and (min-width: 320px) {
+  .mole {
+    background-size: 35%;
+  }
+}
 
+@media (min-width: 481px) and (max-width: 768px) {
+  .mole {
+    background-size: 45%;
+  }
+}
+
+@media (min-width: 769px) {
+  .mole {
+    background-size: 60%;
+  }
+}
 
 .hole.up .mole {
   top: 0;
@@ -94,4 +146,3 @@ input#username {
   padding: 1rem;
   margin-top: 5%;
 }
- 

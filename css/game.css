@@ -1,10 +1,21 @@
 h1 {
   text-align: center;
-  font-size: 10rem;
   line-height: 1;
   margin: 2rem 5rem;
   background: #ffc600;
   font-family: 'Amatic SC', cursive;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 769px) {
+  h1 {
+    font-size: 10rem;
+  }
 }
 
 .score {
@@ -55,12 +66,6 @@ h1 {
   transition: all 0.4s;
 }
 
-.mole:hover {
-  height: 10px;
-  width: 10px;
-  cursor: url("../assets/imgs/handle");
-}
-
 .hole.up .mole {
   top: 0;
 }
@@ -71,6 +76,7 @@ button {
   padding: 2rem;
   font-size: x-large;
   background-color: firebrick;
+  margin-top: 3%;
 }
 
 input#username {

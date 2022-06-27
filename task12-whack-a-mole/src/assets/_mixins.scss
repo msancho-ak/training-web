@@ -1,0 +1,57 @@
+@mixin h1Size {
+   
+  @media (max-width: 480px) and (min-width: 320px) {
+      font-size: 2rem;
+    }
+    @media (min-width: 481px) and (max-width: 768px) {
+      font-size: 3rem;
+    }
+    @media (min-width: 769px) {
+      font-size: 10rem;
+
+    }
+}
+
+
+@mixin  buttonSize {
+  @media (max-width: 480px) and (min-width: 320px) {
+    left: 7rem;
+    padding: 1rem;
+    font-size: x-small;
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+    font-size: 3rem;
+  }
+  @media (min-width: 769px) {
+    font-size: 10rem;
+
+  }
+}
+
+@mixin  game--size{
+  @media (max-width: 480px) and (min-width: 320px) {
+    width: 100vw;
+    height: 250px;
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+    width: 90vw;
+    height: 320px;
+  }
+  @media (min-width: 769px) {
+    width: 600px;
+    height: 400px;
+  }
+} 
+
+
+@mixin  mole--width{
+  @media (max-width: 480px) and (min-width: 320px) {
+    background-size: 35%;
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+    background-size: 45%;
+  }
+  @media (min-width: 769px) {
+    background-size: 60%;
+  }
+} 

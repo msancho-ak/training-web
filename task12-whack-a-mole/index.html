@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>HTML + JS + CSS</title>
     <link rel="stylesheet" href="src/assets/style.css" />
   </head>
@@ -37,8 +38,14 @@
         <div class="mole"></div>
       </div>
     </div>
-    <button onClick="game.startGame()">WHACK!</button>
-    <input id="username" type="text" placeholder="Player's name" />
+
+    <button style="display: none" onClick="game.startGame()">WHACK!</button>
+    <input
+      style="display: none"
+      id="username"
+      type="text"
+      placeholder="Player's name"
+    />
     <audio id="hihat" src="src/assets/sounds/hihat.wav"></audio>
     <audio id="kick" src="src/assets/sounds/kick.wav"></audio>
     <script src="src/game.js"></script>
