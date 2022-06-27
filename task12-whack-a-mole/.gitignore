@@ -1,1 +1,3 @@
-task11-next.js
+/node_modules
+# misc
+.DS_Store
