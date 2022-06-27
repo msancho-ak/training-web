@@ -5,6 +5,7 @@ html {
   font-family: 'helvetica neue';
   font-size: 20px;
   font-weight: 200;
+  cursor: url(../assets/imgs/dirt.svg), auto;
 }
 
 body {
