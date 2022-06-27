@@ -1,38 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML + JS + CSS</title>
+    <link rel="stylesheet" href="src/assets/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>HTML + JS + CSS</title>
-  <link rel="stylesheet" href="src/assets/style.css">
-</head>
-
-<body>
-  <h1>Whack-a-mole! <span class="score">0</span></h1>
-  <div class="game">
-    <div class="hole hole1">
-      <div class="mole"></div>
+  <body>
+    <h1>Whack-a-mole! <span class="score">0</span></h1>
+    <div class="game">
+      <div class="hole hole1">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole2">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole3">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole4">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole5">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole6">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole7">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole8">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole9">
+        <div class="mole"></div>
+      </div>
     </div>
-    <div class="hole hole2">
-      <div class="mole"></div>
-    </div>
-    <div class="hole hole3">
-      <div class="mole"></div>
-    </div>
-    <div class="hole hole4">
-      <div class="mole"></div>
-    </div>
-    <div class="hole hole5">
-      <div class="mole"></div>
-    </div>
-    <div class="hole hole6">
-      <div class="mole"></div>
-    </div>
-  </div>
-  <button onClick="game.startGame()">WHACK!</button>
-  <audio src="src/assets/sounds/hihat.wav"></audio>
-  <audio src="src/assets/sounds/kick.wav"></audio>
-  <script src="src/game.js"></script>
-</body>
-
+    <button onClick="game.startGame()">WHACK!</button>
+    <input id="username" type="text" placeholder="Player's name" />
+    <audio id="hihat" src="src/assets/sounds/hihat.wav"></audio>
+    <audio id="kick" src="src/assets/sounds/kick.wav"></audio>
+    <script src="src/game.js"></script>
+  </body>
 </html>
