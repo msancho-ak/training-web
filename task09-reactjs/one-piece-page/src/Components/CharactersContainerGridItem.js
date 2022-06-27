@@ -5,7 +5,7 @@ export default class CharactersContainerGridItem extends Component{
         super(props);
     }
     render(){
-        return( <div className={`characters-container_grid_item ${this.props.mostrar? '':'hideMore'}` }>
+        return( <div className={`characters-container_grid_item ${this.props.show? '':'hideMore'}` }>
                     <img src={this.props.imgPath} alt="" />
                     <p className="characters-container_grid_item_characterName">
                         {this.props.name}

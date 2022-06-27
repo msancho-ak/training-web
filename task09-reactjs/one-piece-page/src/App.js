@@ -8,15 +8,15 @@ import Footer from './Components/Footer';
 function App() {
   return (
     <>
-     <MenuContainer></MenuContainer>
-     <MenuOptions></MenuOptions>
-     <SinopsisContainer></SinopsisContainer>
+     <MenuContainer/>
+     <MenuOptions/>
+     <SinopsisContainer/>
      <div className="space-under-absolute"></div>
-     <SearchSection PlaceHolder="Search Characters, Islands or Objects"></SearchSection>
-     <CommonItemsContainer ID="characterSection" title="Characters"></CommonItemsContainer>
-     <CommonItemsContainer ID="islandSection" title="Islands"></CommonItemsContainer>
-     <CommonItemsContainer ID="mistSection" title="Mist Objects"></CommonItemsContainer>
-     <Footer></Footer>
+     <SearchSection PlaceHolder="Search Characters, Islands or Objects"/>
+     <CommonItemsContainer ID="characterSection" title="Characters"/>
+     <CommonItemsContainer ID="islandSection" title="Islands"/>
+     <CommonItemsContainer ID="mistSection" title="Mist Objects"/>
+     <Footer/>
     </>
    
   );

@@ -6,10 +6,10 @@ import SinopsisContainerContentReadAll from './SinopsisContainerContentReadAll';
 export default class SinopsisContainerContent extends Component{
     render(){
         return(<div className="sinopsis-container_content">
-                <SinopsisContainerContentTitle title="Sipnosis"></SinopsisContainerContentTitle>
-                <SinopsisContainerContentText></SinopsisContainerContentText>
+                <SinopsisContainerContentTitle title="Sipnosis"/>
+                <SinopsisContainerContentText/>
                 <div className="division hideDesktop"></div>
-                <SinopsisContainerContentReadAll></SinopsisContainerContentReadAll>
+                <SinopsisContainerContentReadAll/>
                </div>)
     }
 }

@@ -6,9 +6,9 @@ import SinopsisContainerContent from './SinopsisContainerContent';
 export default class SinopsisContainer extends Component{
     render(){
         return(<div className="sinopsis-container">
-                    <SinopsisContainerImage></SinopsisContainerImage>
-                    <SinopsisContainerReadMoreLogo></SinopsisContainerReadMoreLogo>
-                    <SinopsisContainerContent></SinopsisContainerContent>
+                    <SinopsisContainerImage/>
+                    <SinopsisContainerReadMoreLogo/>
+                    <SinopsisContainerContent/>
                 </div>)
     }
 
