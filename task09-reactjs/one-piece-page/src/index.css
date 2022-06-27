@@ -945,3 +945,7 @@ a:active {
     margin-left: 0%;
   }
 }
+
+.name{
+  font-weight: bold;
+}

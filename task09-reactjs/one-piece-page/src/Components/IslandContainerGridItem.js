@@ -15,7 +15,7 @@ export default class IslandContainerGridItem extends Component{
         return( <div className={`island-container_grid_item ${this.props.show? '':' hideTablet'} ${this.props.index >1 ?'hideMore':''}`}>
                     <img src={this.props.img} alt="" />
                     <div className="island-container_grid_item_descripcion">
-                    <b><span>{this.props.name}</span></b>
+                    <span className='name'>{this.props.name}</span>
                     <div className="island-container_grid_item_descripcion_region">
                         <img
                         style={logoStyle}
