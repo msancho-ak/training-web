@@ -4,13 +4,20 @@ game.initialize();
 function Game() {
     const holes = document.querySelectorAll('.hole');
     const scoreBoard = document.querySelector('.score');
+    const levelBoard = document.getElementById('lvl');
     const moles = document.querySelectorAll('.mole');
     const minPeepTime = 200;
     const maxPeepTime = 1000;
+
+    const minPeepSecondLevel = 400;
+    const maxPeepSecondLevel = 800;
+    
     let lastHole;
     let timeUp = false;
     let score = 0;
     let hit = false;
+    let gameTimer = null;
+    let bonusTime = false;
 
     this.initialize = () => {
         window.localStorage.setItem("scores",JSON.stringify([]))
@@ -32,7 +39,20 @@ function Game() {
     }
 
     this.peep = () => {
-        const time = this.randomTime(minPeepTime, maxPeepTime);
+        let time = 0;
+        if(score<5){
+            time= this.randomTime(minPeepTime, maxPeepTime);
+        }
+        else{
+            if(!bonusTime){
+                levelBoard.textContent="Level 2"
+                clearTimeout(gameTimer);
+                gameTimer = null;
+                gameTimer = setTimeout(() => timeUp = true, 10000);
+                bonusTime = true;
+            }
+            time = this.randomTime(minPeepSecondLevel,maxPeepSecondLevel);
+        }
         const hole = this.randomHole(holes);
         hole.classList.add('up');
         setTimeout(() => {
@@ -45,16 +65,14 @@ function Game() {
             }
         }, time);
     }
-
     this.startGame = () => {
         document.getElementById('username').disabled=true;
         scoreBoard.textContent = 0;
+        levelBoard.textContent="Level 1"
         timeUp = false;
-
         score = 0;
         this.peep();
-        setTimeout(() => timeUp = true, 10000)
-        
+        gameTimer = setTimeout(() => timeUp = true, 10000)
     }
 
     this.bonk = e => {
@@ -94,7 +112,7 @@ function Game() {
         }
         else{
             for(let i =0; i< scores.length ; i++){
-                if(elem[i].score < score){
+                if(scores[i].score < score){
                     scores[i] = {
                         user:userName.value!==""?userName.value : 'Anonymous',
                         score: score

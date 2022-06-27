@@ -49,19 +49,17 @@ h1 {
   }
 
   button {
-    position: absolute;
-    left: 15rem;
-    padding: 2rem;
-    font-size: x-large;
-    background-color: firebrick;
-    margin-top: 3%;
+    @include buttonSize;
   }
 
   input#username {
-    position: absolute;
-    left: 25rem;
-    padding: 1rem;
-    margin-top: 5%;
+    @include inputSize;
     
   }
   
+  .level{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }

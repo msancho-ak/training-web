@@ -133,16 +133,71 @@ h1 {
 
 button {
   position: absolute;
-  left: 15rem;
-  padding: 2rem;
-  font-size: x-large;
-  background-color: firebrick;
   margin-top: 3%;
+  background-color: firebrick;
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+  button {
+    left: 8rem;
+    padding: 1rem;
+    font-size: x-small;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  button {
+    left: 11rem;
+    padding: 1rem;
+    font-size: x-small;
+  }
+}
+
+@media (min-width: 769px) {
+  button {
+    left: 16rem;
+    padding: 2rem;
+    font-size: x-large;
+  }
 }
 
 input#username {
   position: absolute;
-  left: 25rem;
-  padding: 1rem;
-  margin-top: 5%;
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+  input#username {
+    left: 6rem;
+    padding: 0.3rem;
+    margin-top: 20%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  input#username {
+    left: 9rem;
+    padding: 0.5rem;
+    margin-top: 15%;
+  }
+}
+
+@media (min-width: 769px) {
+  input#username {
+    left: 26rem;
+    padding: 1rem;
+    margin-top: 5%;
+  }
+}
+
+.level {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }

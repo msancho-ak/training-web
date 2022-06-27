@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <h1>Whack-a-mole! <span class="score">0</span></h1>
+    <h1>Whack-a-mole!<span class="score">0</span></h1>
     <div class="game">
       <div class="hole hole1">
         <div class="mole"></div>
@@ -38,14 +38,12 @@
         <div class="mole"></div>
       </div>
     </div>
+    <div class="level">
+      <h3 id="lvl">Level 1</h3>
+    </div>
 
-    <button style="display: none" onClick="game.startGame()">WHACK!</button>
-    <input
-      style="display: none"
-      id="username"
-      type="text"
-      placeholder="Player's name"
-    />
+    <button onClick="game.startGame()">WHACK!</button>
+    <input id="username" type="text" placeholder="Player's name" />
     <audio id="hihat" src="src/assets/sounds/hihat.wav"></audio>
     <audio id="kick" src="src/assets/sounds/kick.wav"></audio>
     <script src="src/game.js"></script>
