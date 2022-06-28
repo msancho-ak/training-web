@@ -1,0 +1,50 @@
+@import 'settings';
+@import 'generic';
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: $margin-images;
+    &__characterCard {
+        position: relative;
+        height: 279px;
+        width: 220px;
+        border-radius: $border-radius-images;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: linear-gradient(
+          179.8deg,
+          rgba(255, 255, 255, 0) 50.33%,
+          #000000 97.62%
+        );
+        &__characterName {
+            position: absolute;
+            color: $image-font-color;
+            text-align: center;
+            top: 70%;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 22px;
+            font-weight: 700;
+            font-family: 'Roboto Slab';
+          }
+          img {
+            position: relative;
+            z-index: -1;
+            display: block;
+            height: 279px;
+            width: 220px;
+            border-radius: $border-radius-images;
+          }
+      }
+      &__characterCard_margin{
+        margin-right: $margin-images;
+      } 
+      
+  }
+
+  .container-flex{
+    display: flex;
+    margin-top: $margin-images;
+  }
+
