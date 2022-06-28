@@ -21,6 +21,7 @@ function Game() {
 
     this.initialize = () => {
         window.localStorage.setItem("scores",JSON.stringify([]))
+        this.addBestPlayers([])
         moles.forEach(mole => mole.addEventListener('click', this.bonk));
         holes.forEach(hole => hole.addEventListener('click', this.fail));
     }
@@ -123,6 +124,21 @@ function Game() {
         }
         scores = scores.sort((a,b) => (a.score > b.score) ? 1 : ((b.score > a.score) ? -1 : 0))
         window.localStorage.setItem('scores',JSON.stringify(scores));
+        this.addBestPlayers(scores);
+    }
+
+    this.addBestPlayers= (list)=>{
+        list = list.reverse()
+
+        let playersList = document.getElementById('playersList');
+        playersList.innerHTML = '';
+
+        if(list.length === 0){
+            playersList.innerHTML = playersList.innerHTML + "<li>There are no scores registred</li>"
+        }
+        for(let i =0; i< list.length ; i++){
+            playersList.innerHTML = playersList.innerHTML + `<li>${list[i].user} - ${list[i].score}</li>`
+        }
     }
 }
 

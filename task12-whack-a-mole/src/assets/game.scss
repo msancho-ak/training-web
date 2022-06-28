@@ -63,3 +63,12 @@ h1 {
     align-items: center;
     display: flex;
   }
+
+  .best-players{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    @include best--players-position;
+  }
