@@ -1,18 +1,16 @@
 @mixin h1Size {
   @media (max-width: 480px) and (min-width: 320px) {
-      font-size: 2rem;
-    }
-    @media (min-width: 481px) and (max-width: 768px) {
-      font-size: 3rem;
-    }
-    @media (min-width: 769px) {
-      font-size: 10rem;
-
-    }
+    font-size: 2rem;
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+    font-size: 3rem;
+  }
+  @media (min-width: 769px) {
+    font-size: 6rem;
+  }
 }
 
-
-@mixin  buttonSize {
+@mixin buttonSize {
   @media (max-width: 480px) and (min-width: 320px) {
     left: 7rem;
     padding: 1rem;
@@ -23,11 +21,10 @@
   }
   @media (min-width: 769px) {
     font-size: 10rem;
-
   }
 }
 
-@mixin  game--size{
+@mixin game--size {
   @media (max-width: 480px) and (min-width: 320px) {
     width: 100vw;
     height: 250px;
@@ -40,10 +37,9 @@
     width: 600px;
     height: 400px;
   }
-} 
+}
 
-
-@mixin  mole--width{
+@mixin mole--width {
   @media (max-width: 480px) and (min-width: 320px) {
     background-size: 35%;
   }
@@ -53,8 +49,7 @@
   @media (min-width: 769px) {
     background-size: 60%;
   }
-} 
-
+}
 
 @mixin buttonSize {
   position: absolute;
@@ -74,11 +69,10 @@
     left: 16rem;
     padding: 2rem;
     font-size: x-large;
-    
-  } 
+  }
 }
 
-@mixin  inputSize {
+@mixin inputSize {
   position: absolute;
   @media (max-width: 480px) and (min-width: 320px) {
     left: 6rem;
@@ -94,8 +88,7 @@
     left: 26rem;
     padding: 1rem;
     margin-top: 5%;
-  } 
-  
+  }
 }
 
 @mixin best--players-position {
@@ -108,6 +101,5 @@
   }
   @media (min-width: 769px) {
     margin-top: 14%;
-  } 
-  
+  }
 }
