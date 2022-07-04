@@ -1,26 +1,49 @@
-import React, { Component } from 'react';
-import CommonItemsContainerGrid from './CommonItemsContainerGrid';
+import React, { Component } from "react";
+import CommonItemsContainerGrid from "./CommonItemsContainerGrid";
 
-export default class CommonItemsContainer extends Component{
-    constructor(props){
-        super(props)
-    }
-    render(){
-        return(<div id={this.props.ID} className="common-items-container">
-                    <div className="common-items-container_content">
-                        <div className="common-items-container_title">
-                            <div className="common-items-container_title--main">
-                                <span>{this.props.title}</span>
-                            </div>
-                            <div className="common-items-container_title-see-all">
-                                <span>See all</span>
-                            </div>
-                        </div>
-                        {this.props.title==="Characters"? <CommonItemsContainerGrid type={this.props.title}></CommonItemsContainerGrid>:""}
-                        {this.props.title==="Islands"? <CommonItemsContainerGrid type={this.props.title}></CommonItemsContainerGrid>:""}
-                        {this.props.title==="Mist Objects"? <CommonItemsContainerGrid type={this.props.title}></CommonItemsContainerGrid>:""}
-                    </div>
-                </div>
-          )
-    }
+const CHARACTERS = "Characters";
+const ISLANDS = "Islands";
+const MIST_OBJECTS = "Mist Objects";
+
+export default class CommonItemsContainer extends Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div id={this.props.ID} className="common-items-container">
+        <div className="common-items-container_content">
+          <div className="common-items-container_title">
+            <div className="common-items-container_title--main">
+              <span>{this.props.title}</span>
+            </div>
+            <div className="common-items-container_title-see-all">
+              <span>See all</span>
+            </div>
+          </div>
+          {this.props.title === CHARACTERS ? (
+            <CommonItemsContainerGrid
+              type={this.props.title}
+            ></CommonItemsContainerGrid>
+          ) : (
+            ""
+          )}
+          {this.props.title === ISLANDS ? (
+            <CommonItemsContainerGrid
+              type={this.props.title}
+            ></CommonItemsContainerGrid>
+          ) : (
+            ""
+          )}
+          {this.props.title === MIST_OBJECTS ? (
+            <CommonItemsContainerGrid
+              type={this.props.title}
+            ></CommonItemsContainerGrid>
+          ) : (
+            ""
+          )}
+        </div>
+      </div>
+    );
+  }
 }
