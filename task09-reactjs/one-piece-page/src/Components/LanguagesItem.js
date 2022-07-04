@@ -1,0 +1,17 @@
+import React, { Component } from 'react';
+
+import spanishIcon from '../images/spain.svg'
+import englishIcon from '../images/usa.svg'
+export default class LanguagesItem extends Component{
+    constructor(props){
+        super(props);
+    }
+    render(){
+        return(
+            <div className= {`languages_item ${this.props.Language === "English"? " languages_item--selected" : ""} `}>
+                <span className="hideDesktop"> {this.props.Language}</span>
+                <img src={this.props.Language === "English"? englishIcon : spanishIcon} alt="" />
+            </div>
+        )
+    }
+}
