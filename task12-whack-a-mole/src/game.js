@@ -97,6 +97,7 @@ function Game() {
       return;
     }
     if (e.target.classList.value.includes("hole")) {
+      if (gameTimer == null) return;
       const hihat = document.getElementById("hihat");
       hihat.currentTime = 0;
       hihat.play();
