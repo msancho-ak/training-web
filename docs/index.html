@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One Piece - Home</title>
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto Slab"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="menu-container">
+      <div class="menu-container_icon hideDesktop" onclick="showOrHideMenu()">
+        <img id="iconMenu" src="images/menu.svg" alt="" />
+      </div>
+      <div class="menu-container_logo">
+        <img src="images/One-Piece-Logo 1.svg" alt="" />
+      </div>
+    </div>
+
+    <div id="menuOptions" class="menu_items hideMenu">
+      <div class="menu_item"><a href="#">Home</a></div>
+      <div class="menu_item"><a href="#characterSection">Characters</a></div>
+      <div class="menu_item"><a href="#islandSection">Islands</a></div>
+      <div class="menu_item"><a href="#mistSection">Mist Objects</a></div>
+      <div class="menu_item">
+        <div class="languages">
+          <div class="languages_item languages_item--selected">
+            <span class="hideDesktop"> English</span>
+            <img src="images/usa.svg" alt="" />
+          </div>
+        </div>
+        <div class="languages">
+          <div class="languages_item">
+            <span class="hideDesktop">Spanish</span>
+            <img src="images/spain.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sinopsis-container">
+      <div class="sinopsis-container_image">
+        <img src="images/mainImage.svg" alt="" />
+      </div>
+      <div id="logoReadMore" class="hideDesktop hideMore">
+        <img src="images/One-Piece-Logo 1.svg" alt="" />
+      </div>
+      <div class="sinopsis-container_content">
+        <div class="sinopsis-container_content_title">
+          <span>Sipnosis</span>
+        </div>
+        <div class="sinopsis-container_content_text">
+          <p>
+            Dawn Island is an island located in the East Blue and where the Goa
+            Kingdom is situated.
+          </p>
+          <p>
+            It is the home island of Monkey D. Luffy and the starting point of
+            his journey into piracy, as well as the home island of his father,
+            Monkey D. Dragon.
+          </p>
+          <div class="hideMenu" id="readMoreSipnosis">
+            <p>
+              This is also the adopted home of Portgas D. Ace after the death of
+              his mother and the home of Sabo and his family.
+            </p>
+            <p>
+              Reverse Mountain is an extremely tall mountain at one of the
+              points where the four Blues meet and is one of the two known
+              entrances to the Grand Line.
+            </p>
+            <p>
+              It is located in the Red Line and is the geographical antipode of
+              Mary Geoise.
+            </p>
+          </div>
+        </div>
+        <div class="division hideDesktop"></div>
+        <div
+          class="sinopsis-container_content_readAll hideDesktop"
+          onclick="readMoreOrLess()"
+        >
+          <img id="readMoreIcon" src="images/readMore.svg" alt="" />
+          <span id="readMoreText">Read All</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="space-under-absolute"></div>
+
+    <div class="searchRegion" class="common-items-container">
+      <div class="common-items-container_content">
+        <input
+          type="text"
+          class="searchElement"
+          placeholder="Search Characters, Islands or Objects"
+        />
+      </div>
+    </div>
+    <div id="characterSection" class="common-items-container">
+      <div class="common-items-container_content">
+        <div class="common-items-container_title">
+          <div class="common-items-container_title--main">
+            <span>Characters</span>
+          </div>
+          <div class="common-items-container_title-see-all">
+            <span>See all</span>
+          </div>
+        </div>
+        <div class="common-items-container_grid">
+          <div class="characters-container_grid_item">
+            <img src="images/monkeydluffy.svg" alt="" />
+            <p class="characters-container_grid_item_characterName">
+              Monkey D. Luffy
+            </p>
+          </div>
+          <div class="characters-container_grid_item">
+            <img src="images/ace.svg" alt="" />
+            <p class="characters-container_grid_item_characterName">
+              Portgas D. Ace
+            </p>
+          </div>
+          <div class="characters-container_grid_item hideMore">
+            <img src="images/zoro.svg" alt="" />
+            <p class="characters-container_grid_item_characterName">
+              Roronoa Zoro
+            </p>
+          </div>
+          <div class="characters-container_grid_item hideMore">
+            <img src="images/nico.svg" alt="" />
+            <p class="characters-container_grid_item_characterName">
+              Nico Robin
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- and end with -->
+    <div id="islandSection" class="common-items-container">
+      <div class="common-items-container_content">
+        <div class="common-items-container_title">
+          <div class="common-items-container_title--main">
+            <span>Island</span>
+          </div>
+          <div class="common-items-container_title-see-all">
+            <span>See all</span>
+          </div>
+        </div>
+        <div class="common-items-container_grid">
+          <div class="island-container_grid_item">
+            <img src="images/dawnIsland.jpg" alt="" />
+            <div class="island-container_grid_item_descripcion">
+              <b><spam>Dawn Island</spam></b>
+              <div class="island-container_grid_item_descripcion_region">
+                <img
+                  style="width: 10px; height: 10px"
+                  src="images/loc.svg"
+                  alt=""
+                />
+                <span>East Blue</span>
+              </div>
+            </div>
+          </div>
+          <div class="island-container_grid_item">
+            <img src="images/reverseIslando.jpg" alt="" />
+            <div class="island-container_grid_item_descripcion">
+              <b><spam>Reverse Island</spam></b>
+              <div class="island-container_grid_item_descripcion_region">
+                <img
+                  style="width: 10px; height: 10px"
+                  src="images/loc.svg"
+                  alt=""
+                />
+                <span>Red Line</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="island-container_grid_item hideMore">
+            <img src="images/reverseIslando.jpg" alt="" />
+            <div class="island-container_grid_item_descripcion">
+              <b><spam>Reverse Island</spam></b>
+              <div class="island-container_grid_item_descripcion_region">
+                <img
+                  style="width: 10px; height: 10px"
+                  src="images/loc.svg"
+                  alt=""
+                />
+                <span>Red Line</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="island-container_grid_item hideMore hideTablet">
+            <img src="images/reverseIslando.jpg" alt="" />
+            <div class="island-container_grid_item_descripcion">
+              <b><spam>Reverse Island</spam></b>
+              <div class="island-container_grid_item_descripcion_region">
+                <img
+                  style="width: 10px; height: 10px"
+                  src="images/loc.svg"
+                  alt=""
+                />
+                <span>Red Line</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="mistSection" class="common-items-container">
+      <div class="common-items-container_content">
+        <div class="common-items-container_title">
+          <div class="common-items-container_title--main">
+            <span>Mist Objects</span>
+          </div>
+          <div class="common-items-container_title-see-all">
+            <span>See all</span>
+          </div>
+        </div>
+        <div
+          class="common-items-container_grid common-items-container_grid--start"
+        >
+          <div class="mist-objects-container_grid_item">
+            <img src="images/gommu.svg" alt="" />
+            <div class="mist-container_grid_item_descripcion">
+              <spam>Gomu Gomu No Mi</spam>
+              <spam
+                >Is a Paramecia-type Devil Fruit that gives the user's body the
+                properties of rubber, making the user a Rubber Human. It was
+                then accidentally eaten by the series protagonist, Monkey D.
+                Luffy.</spam
+              >
+            </div>
+          </div>
+          <div class="mist-objects-container_grid_item">
+            <img src="images/gommu.svg" alt="" />
+            <div class="mist-container_grid_item_descripcion">
+              <spam>Gomu Gomu No Mi</spam>
+              <spam
+                >Is a Paramecia-type Devil Fruit that gives the user's body the
+                properties of rubber, making the user a Rubber Human. It was
+                then accidentally eaten by the series protagonist, Monkey D.
+                Luffy.</spam
+              >
+            </div>
+          </div>
+          <div class="mist-objects-container_grid_item">
+            <img src="images/gommu.svg" alt="" />
+            <div class="mist-container_grid_item_descripcion">
+              <b><spam>Gomu Gomu No Mi</spam></b>
+              <span>
+                Is a Paramecia-type Devil Fruit that gives the user's body the
+                properties of rubber, making the user a Rubber Human. It was
+                then accidentally eaten by the series protagonist, Monkey D.
+                Luffy.
+              </span>
+            </div>
+          </div>
+          <div class="mist-objects-container_grid_item hideMore">
+            <img src="images/gommu.svg" alt="" />
+            <div class="mist-container_grid_item_descripcion">
+              <b><spam>Gomu Gomu No Mi</spam></b>
+              <span>
+                Is a Paramecia-type Devil Fruit that gives the user's body the
+                properties of rubber, making the user a Rubber Human. It was
+                then accidentally eaten by the series protagonist, Monkey D.
+                Luffy.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <img src="images/pngwing.svg" alt="" />
+      <div>
+        <span
+          >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit at vel
+          congue scelerisque tortor tortor.</span
+        >
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
